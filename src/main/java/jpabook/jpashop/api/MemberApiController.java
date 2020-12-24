@@ -35,6 +35,9 @@ public class MemberApiController {
         return memberService.findMembers();
     }
 
+    /**
+     * 조회 V2: 응답 값으로 엔티티가 아닌 별도의 DTO를 반환한다.
+     */
     @GetMapping("/api/v2/members")
     public Result membersV2() {
         List<Member> findMembers = memberService.findMembers();

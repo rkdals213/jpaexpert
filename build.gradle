@@ -41,11 +41,6 @@ dependencies {
     compile group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
     compile "org.springframework.boot:spring-boot-starter-jdbc"
     compile "mysql:mysql-connector-java:8.0.21"
-
-    //querydsl 추가
-    implementation 'com.querydsl:querydsl-jpa'
-    //querydsl 추가
-    implementation 'com.querydsl:querydsl-apt'
 }
 
 test {
